@@ -11,7 +11,10 @@
 ![添加图书](https://github.com/simplehx/Book-Management-System/blob/master/screenshots/20190718162904.jpg)
 ## 4、查找图书
 ![查找图书](https://github.com/simplehx/Book-Management-System/blob/master/screenshots/20190718162921.jpg)
-
+## 5、删除图书
+![删除图书](https://github.com/simplehx/Book-Management-System/blob/master/screenshots/20190718170004.jpg)
+## 6、修改图书
+![修改图书](https://github.com/simplehx/Book-Management-System/blob/master/screenshots/20190718170028.jpg)
 
 # 二、使用方法
 ## 1、将book_mis.sql文件导入自己的数据库
