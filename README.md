@@ -23,7 +23,7 @@
 ## 3、默认管理员账号为admin  密码为123
 
 # 三、使用了beautyeye，项目地址
-[beautyeye]https://github.com/JackJiang2011/beautyeye
+[beautyeye](https://github.com/JackJiang2011/beautyeye)
 
 # 四、注意事项
 本项目仅在jdk8下进行了测试，beautyeye在jdk12中会报异常
