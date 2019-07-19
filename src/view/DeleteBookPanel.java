@@ -1,25 +1,19 @@
 package view;
 
 import java.awt.BorderLayout;
-import java.awt.Button;
 import java.awt.Component;
 import java.awt.Font;
-import java.awt.GridBagLayout;
-import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
 
 import org.jb2011.lnf.beautyeye.ch3_button.BEButtonUI;
 
@@ -65,6 +59,7 @@ public class DeleteBookPanel extends SearchPanel {
 						JDialog deleteResultDialog = new JDialog(owner, "查询结果", true);
 						UITool.setCentralLocation(owner, deleteResultDialog, 500, 600);
 						ResultSelectPanel deleteResultPanel = new ResultSelectPanel(deleteBookResult);
+						
 						JButton deleteButton = new JButton("删除");
 						deleteButton.setUI(new BEButtonUI().setNormalColor(BEButtonUI.NormalColor.red));
 						//为删除按钮添加监听器
@@ -82,6 +77,9 @@ public class DeleteBookPanel extends SearchPanel {
 							}
 						});
 						deleteResultPanel.add(deleteButton, BorderLayout.SOUTH);
+						JLabel tips = new JLabel("Tips: 可多选批量删除");
+						tips.setFont(new Font("微软雅黑", Font.ITALIC, 17));
+						deleteResultDialog.add(tips, BorderLayout.NORTH);
 						deleteResultDialog.add(deleteResultPanel);
 						deleteResultDialog.setSize(500, 600);
 						deleteResultDialog.setVisible(true);

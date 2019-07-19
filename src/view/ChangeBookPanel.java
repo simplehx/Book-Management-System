@@ -2,6 +2,7 @@ package view;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.LinkedHashMap;
@@ -11,6 +12,7 @@ import java.util.Map;
 import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import org.jb2011.lnf.beautyeye.ch3_button.BEButtonUI;
 
@@ -84,6 +86,9 @@ public class ChangeBookPanel extends SearchPanel {
 							}
 						});
 						changeResultPanel.add(changeButton, BorderLayout.CENTER);
+						JLabel tips = new JLabel("Tips: 可一次修改多条批量提交");
+						tips.setFont(new Font("微软雅黑", Font.ITALIC, 17));
+						changeResultDialog.add(tips, BorderLayout.NORTH);
 						changeResultDialog.add(changeResultPanel);
 						changeResultDialog.pack();
 						changeResultDialog.setVisible(true);

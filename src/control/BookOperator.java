@@ -84,7 +84,7 @@ public class BookOperator {
 					result.setStatus(true);
 					result.setResultString("修改成功");
 				}
-			}	
+			}
 		} catch (SQLException e) {
 			result.setStatus(false);
 			result.setResultString("数据库异常");
